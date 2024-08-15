@@ -1,0 +1,195 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    135deg,
+    rgb(182, 208, 233),
+    rgb(138, 169, 214)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.weather img {
+  height: 450px;
+}
+
+.clearskies-app {
+  width: 35rem;
+  height: 70rem;
+  background-image: linear-gradient(
+    315deg,
+    rgb(161, 205, 247),
+    rgb(119, 170, 247)
+  );
+
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: -3rem 1rem 6rem rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.search-top {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.search-top i {
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+}
+
+.search-top div {
+  font-size: 1.6rem;
+
+  color: rgb(107, 94, 94);
+
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+}
+.search-bar {
+  position: relative;
+}
+
+.not-found {
+  font-size: 3rem;
+  color: rgb(107, 94, 94);
+  margin-top: 5rem;
+  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+.search-bar input {
+  width: 25rem;
+  height: 3.5rem;
+  background-color: transparent;
+  border: 0.2rem solid;
+  border-radius: 3rem;
+  outline: none;
+  padding: 1rem 3rem 1rem 1rem;
+  font-size: 1.6rem;
+
+  color: rgb(107, 94, 94);
+}
+
+.search-bar input::placeholder {
+  font-size: 1.4rem;
+
+  color: rgb(107, 94, 94);
+  letter-spacing: 0.1rem;
+}
+
+.search-bar input:focus::placeholder {
+  color: transparent;
+}
+.search-bar i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.5rem;
+  font-size: 1.5rem;
+
+  color: rgb(107, 94, 94);
+  cursor: pointer;
+}
+
+.switch {
+  margin-left: auto;
+  height: 3.5rem;
+  background-color: transparent;
+  border: 0.2rem solid rgb(107, 94, 94);
+  border-radius: 5rem;
+  padding: 0.5rem 0.7rem;
+  font-size: 2rem;
+  color: rgb(107, 94, 94);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.switch:hover {
+  background-color: rgba(107, 94, 94, 0.1);
+  color: rgb(0, 0, 0);
+}
+
+.weather-type {
+  position: absolute;
+
+  bottom: 25%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translateX(-50%);
+
+  color: rgb(107, 94, 94);
+}
+
+.temp {
+  position: absolute;
+  top: 54%;
+  left: 55%;
+  transform: translateX(-50%);
+  font-size: 9rem;
+
+  background-image: linear-gradient(
+    to right,
+    rgb(121, 112, 112),
+    rgb(107, 94, 94)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.weather-date {
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 22%;
+  font-size: 1.6rem;
+  color: rgb(107, 94, 94);
+}
+
+.weather-data {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  column-gap: 0.5rem;
+  padding: 0 2rem;
+}
+
+.weather-data > div {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.data-name {
+  font-size: 1.6rem;
+  color: rgb(107, 94, 94);
+}
+
+.weather-data i {
+  font-size: 2rem;
+  color: rgb(133, 215, 240);
+  text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.data {
+  font-size: 1.5rem;
+  color: rgb(107, 94, 94);
+}
