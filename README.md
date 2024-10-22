@@ -15,24 +15,24 @@ To get started with OsunWeatherApp, follow these steps:
 **Clone the repository:**
 
 bash
-Copiar código
+Copy code
 git clone https://github.com/claytonrreis/SBA320-OsunWeatherApp.git
 Navigate into the project directory:
 
 bash
-Copiar código
+copy code
 cd OsunWeatherApp
 Install dependencies:
 
 bash
-Copiar código
+copy code
 npm install
 Set up your API key:
 
 **Start the application:**
 
 bash
-Copiar código
+copy code
 npm start
 Your app will be running at http://localhost:3000 🎉
 
